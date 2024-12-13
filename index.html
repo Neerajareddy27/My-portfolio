@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+    
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Hi, I'm <span>Neeraja Reddy</span></h1>
+            <p class="header__subtitle">A passionate <span>Software Developer</span>.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="assets/img/about.jpg" alt="Profile" class="about__image">
+            <p>I'm a software developer with a passion for building beautiful and functional websites. I specialize in front-end and back-end development and enjoy turning complex problems into simple, elegant solutions.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul class="skills__list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>SQL</li>
+                <li>PHP</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects__grid">
+                <div class="project">
+                    <h3>Healthcare Web Application</h3>
+                    <p>Our health care application offers two modules for image
+                        based diagnosis: diabetic retinopathy and skin cancer. These
+                        modules use advanced CNN algorithm to classify images and
+                        predict the disease from the data provided by the users and
+                        deployed using flask.</p>
+                    <a href="https://github.com/Neerajareddy27/Computer-vision-on-healthcare" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Insightsure</h3>
+                    <p>The insightsure is a trained with the machine learning
+                        algorithm to predict the medical insurance charges. And it is
+                        deployed the web application by using flask.</p>
+                    <a href="https://github.com/Neerajareddy27/Insightsure-Health-Insurance-Price-Predicton" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Sentiment Analysis on Amazon Reviews</h3>
+                    <p>Here, amazon reviews are used to analyze the customers
+                        reactions of their purchased products. Based on their positive
+                        reviews, we promote the brands. Here we use Natural
+                        Language Processing for analyzing the data and machine
+                        learning algorithm is used to recommend the brands.</p>
+                    <a href="https://github.com/Neerajareddy27/Sentiment-Analysis-on-E-commerce-websites-and-Product-recommendation-system" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Stocks Application</h3>
+                    <p>A stocks application provides real-time market data, 
+                        portfolio tracking, and analysis tools, enabling users 
+                        to monitor and manage their investments, make informed decisions, 
+                        and stay updated on market trends.</p>
+                    <a href="https://github.com/Neerajareddy27/Stocks-Application" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact__form" action="https://formspree.io/f/mgvebbvv" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Enter your mail" required>
+                <textarea name="message" rows="4" placeholder="Write your message here... Let me know how I can help you!" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Neeraja. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
